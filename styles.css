@@ -149,7 +149,6 @@ header p {
     border-bottom: 1px solid transparent; /* Borde transparente inicialmente */
     transition: border-bottom 0.2s ease, color 0.3s;
     width: fit-content;
-    text-align: right; 
 }
 
 .ver-mas-btn:hover {
@@ -194,6 +193,6 @@ header p {
     .ver-mas-btn {
         padding: 4px 0; /* Menos padding para el botón en móvil */
         width: auto; /* Ajuste para ancho */
-        text-align: left; /* Alineación a la izquierda */
+        align-self: center;
     }
 }
