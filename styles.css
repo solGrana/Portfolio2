@@ -1,0 +1,199 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f5; /* Fondo claro */
+    color: #333; /* Texto oscuro */
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 5% 2%; /* Ajustado para ser responsivo */
+    background-color: #44475a; /* Fondo gris oscuro elegante */
+    border-bottom: 2px solid #6272a4; /* Tono azul suave */
+}
+
+header h1 {
+    font-size: 3rem; /* Ajuste responsivo */
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #50fa7b; /* Verde neón */
+    text-transform: uppercase;
+}
+
+header p {
+    font-size: 1.2rem; /* Ajuste responsivo */
+    line-height: 1.6;
+    color: #f8f8f2; /* Texto blanco suave */
+}
+
+.glow {
+    text-shadow: 0 0 10px rgba(80, 250, 123, 0.7), 0 0 20px rgba(80, 250, 123, 0.5); /* Sutil y elegante */
+}
+
+.contacto {
+    margin-top: 20px;
+}
+
+.contacto a {
+    margin: 10px;
+    text-decoration: none;
+    color: #bd93f9; /* Violeta elegante */
+    font-weight: 500;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.3s;
+}
+
+.contacto a:hover {
+    border-bottom: 1px solid #bd93f9; /* Violeta en hover */
+}
+
+.proyectos {
+    padding: 5% 2%; /* Ajustado para ser responsivo */
+    background-color: #ffffff; /* Fondo blanco */
+}
+
+.proyectos h2 {
+    font-size: 2rem; /* Ajuste responsivo */
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #6272a4; /* Azul suave */
+    text-align: center;
+}
+
+.proyectos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff; /* Fondo blanco */
+    border: 1px solid #e0e0e0; /* Borde ligero */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    width: 100%;
+    max-width: 1000px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    position: relative;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Sombra ligera */
+}
+
+.card img {
+    width: 35%; /* Ancho ajustado */
+    height: auto; /* Mantiene la proporción */
+    object-fit: contain; /* Ajusta la imagen sin deformarla */
+}
+
+.card-content {
+    padding: 2%; /* Ajuste para ser más responsivo */
+    text-align: left;
+    width: 65%; /* Ancho ajustado */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Cambiado para permitir espacio adicional */
+}
+
+.card-content h3 {
+    font-size: 1.4rem; /* Ajuste responsivo */
+    font-weight: 600;
+    color: #50fa7b; /* Verde sutil */
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 1rem; /* Ajuste responsivo */
+    color: #444; /* Texto oscuro */
+    margin-bottom: 15px;
+    flex-grow: 1; /* Permite que el texto use el espacio restante */
+}
+
+.card-content a {
+    color: #3b82f6; /* Azul suave */
+    text-decoration: none;
+    font-weight: 500;
+    align-self: flex-start;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.2s ease;
+}
+
+.card-content a:hover {
+    border-bottom: 1px solid #3b82f6; /* Azul en hover */
+}
+
+.ver-mas-btn {
+    background-color: transparent;
+    border: none;
+    color: #bd93f9; /* Violeta sutil */
+    font-weight: 500;
+    cursor: pointer;
+    padding: 8px 0;
+    align-self: flex-end;
+    border-bottom: 1px solid transparent; /* Borde transparente inicialmente */
+    transition: border-bottom 0.2s ease, color 0.3s;
+    width: fit-content;
+    text-align: right; 
+}
+
+.ver-mas-btn:hover {
+    color: #1e3a8a; /* Azul oscuro en hover */
+    border-bottom: 1px solid #bd93f9; /* Borde violeta en hover */
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem; /* Reducción de tamaño en móvil */
+    }
+
+    header p {
+        font-size: 1rem; /* Reducción de tamaño en móvil */
+    }
+
+    .proyectos h2 {
+        font-size: 1.8rem; /* Reducción de tamaño en móvil */
+    }
+
+    .card {
+        flex-direction: column;
+    }
+
+    .card img {
+        width: 100%; /* Ancho completo en dispositivos pequeños */
+        height: auto; /* Mantiene la proporción */
+    }
+
+    .card-content {
+        width: 100%; /* Ancho completo en dispositivos pequeños */
+    }
+
+    .card-content h3 {
+        font-size: 1.2rem; /* Reducción de tamaño en móvil */
+    }
+
+    .card-content p {
+        font-size: 0.9rem; /* Reducción de tamaño en móvil */
+    }
+
+    .ver-mas-btn {
+        padding: 4px 0; /* Menos padding para el botón en móvil */
+        width: auto; /* Ajuste para ancho */
+        text-align: left; /* Alineación a la izquierda */
+    }
+}
