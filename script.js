@@ -13,16 +13,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
     typeEffect();
 });
-
-
-/*   <header>
-<div class="intro">
-<br><br>
-<h1><span id="typewriter"></span></h1>
-</div>
-<nav>
-<br><br> <br>
-<a href="#about">Sobre mí</a>
-<a href="#projects">Proyectos</a>
-</nav>
-</header>*/

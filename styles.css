@@ -73,7 +73,7 @@ header p {
 .proyectos-container {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 80px;
     align-items: center;
 }
 
@@ -85,7 +85,7 @@ header p {
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
     width: 100%;
-    max-width: 1000px;
+    max-width: 1500px;
     overflow: hidden;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     position: relative;
